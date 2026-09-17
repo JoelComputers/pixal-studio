@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pixal Studio — Explore real 3D results</title>
+<meta name="description" content="Turn a single image into a textured 3D model. Explore real Pixal Studio results in your browser. Free, open-source, local image-to-3D.">
+<link rel="stylesheet" href="gallery.css">
+<script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.js","three/addons/":"./vendor/three/examples/jsm/"}}</script>
+</head>
+<body>
+<header><a class="brand" href="./">◇ pixal <span>studio</span></a><nav><a href="https://github.com/JoelComputers/pixal-studio">GitHub</a><a class="button" href="https://github.com/JoelComputers/pixal-studio/releases/tag/v0.1.0">Get the free preview ↗</a></nav></header>
+<main>
+<div class="intro"><p class="eyebrow">FREE · OPEN SOURCE · LOCAL</p><h1>One image.<br>A new dimension.</h1><p>From a reference to a textured 3D model.<br>Explore real results. Turn them around. Look closer.</p><span class="badge">v0.1.0 · Developer preview</span></div>
+<section aria-labelledby="dragon-title" data-model="forest-dragon">
+<div class="section-heading"><div><p class="eyebrow">01 / COLLECTIBLE</p><h2 id="dragon-title">Forest dragon</h2></div><p>Organic forms. Sculpted scales. A little character.</p></div>
+<div class="comparison"><figure><figcaption>01 <b>Reference image</b><small>AI-generated with local SDXL</small></figcaption><img src="images/forest-dragon-input.png" alt="Green forest dragon reference with cream belly and ochre horns"></figure><figure><figcaption>02 <b>Rendered result</b><small>Actual exported GLB, lit in Blender</small></figcaption><img src="images/forest-dragon-output.png" alt="Studio render of the generated forest dragon model"></figure><figure><figcaption>03 <b>Explore in 3D</b><small>Same exported model, live in your browser</small></figcaption><div class="viewport" tabindex="0" aria-label="Interactive forest dragon viewer"><img class="poster" src="images/forest-dragon-output.png" alt=""><button class="load button">Load 3D · 32 MB</button><p class="status" role="status"></p></div><div class="controls" hidden><button class="reset">Reset view</button><button class="left" aria-label="Rotate forest dragon left">↶ Rotate</button><button class="zoom" aria-label="Zoom in on forest dragon">+ Zoom</button></div></figure></div><p class="hint">Drag to orbit · Scroll or pinch to zoom · <a href="models/forest-dragon.glb" download>Download GLB</a></p>
+</section>
+<section aria-labelledby="teapot-title" data-model="ceramic-teapot">
+<div class="section-heading"><div><p class="eyebrow">02 / PRODUCT DESIGN</p><h2 id="teapot-title">Ceramic teapot</h2></div><p>Teal glaze. Warm wood. A familiar form.</p></div>
+<div class="comparison"><figure><figcaption>01 <b>Reference image</b><small>AI-generated with local SDXL</small></figcaption><img src="images/ceramic-teapot-input.png" alt="Teal ceramic teapot reference with arched walnut handle"></figure><figure><figcaption>02 <b>Rendered result</b><small>Actual exported GLB, lit in Blender</small></figcaption><img src="images/ceramic-teapot-output.png" alt="Studio render of the generated ceramic teapot model" loading="lazy"></figure><figure><figcaption>03 <b>Explore in 3D</b><small>Same exported model, live in your browser</small></figcaption><div class="viewport" tabindex="0" aria-label="Interactive ceramic teapot viewer"><img class="poster" src="images/ceramic-teapot-output.png" alt="" loading="lazy"><button class="load button">Load 3D · 34 MB</button><p class="status" role="status"></p></div><div class="controls" hidden><button class="reset">Reset view</button><button class="left" aria-label="Rotate ceramic teapot left">↶ Rotate</button><button class="zoom" aria-label="Zoom in on ceramic teapot">+ Zoom</button></div></figure></div><p class="hint">Drag to orbit · Scroll or pinch to zoom · <a href="models/ceramic-teapot.glb" download>Download GLB</a></p>
+</section>
+<aside><h2>Real outputs. Room to improve.</h2><p>Both models use Pixal Studio's Detailed preset. No manual mesh repair or texture retouching. Lighting differs between the reference, Blender render, and live viewer. Small details and unseen surfaces can change during reconstruction.</p><p>This gallery displays completed examples; it does not generate new models online. The free local app currently needs a compatible ComfyUI installation.</p><a href="https://github.com/JoelComputers/pixal-studio/blob/main/docs/SHOWCASE.md">Settings &amp; provenance ↗</a></aside>
+</main><footer><a class="brand" href="./">◇ pixal <span>studio</span></a><p>Built with ComfyUI · Pixal3D / TRELLIS.2 · Three.js</p><a href="https://github.com/JoelComputers/pixal-studio">Source &amp; installation ↗</a></footer>
+<script type="module" src="gallery.js"></script>
+</body></html>

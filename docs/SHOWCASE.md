@@ -1,7 +1,7 @@
 # Example gallery: real inputs and exported results
 
 These examples were made specifically for Pixal Studio's public page. The
-subjects are an explorer robot and a forest dragon figurine.
+subjects are a ceramic teapot and a forest dragon figurine.
 There are no people or sexual themes in the published examples.
 
 ## How the images were made
@@ -28,9 +28,15 @@ for the input prompts, seeds, file hashes, generation duration, and GLB hashes.
 Generation timings exclude queue time and CPU rendering. They are measurements
 of these specific runs on the shared local backend, not performance promises.
 
-## View the application
+## Interactive gallery
 
-![Actual Pixal Studio interface with a completed explorer robot](images/studio-screenshot.png)
+[Open the live gallery](https://joelcomputers.github.io/pixal-studio/). Each example
+shows its reference image, Blender render, and original GLB in a browser viewer.
+Click Load 3D, then drag to orbit or scroll to zoom. Only one model loads at a time.
+Models are served as public GLB files (roughly 30 MB each), with no generation server.
+The gallery uses the bundled MIT-licensed Three.js 0.169.0.
+
+## View the application
 
 ![Actual Pixal Studio interface with a completed forest dragon](images/studio-dragon-screenshot.png)
 

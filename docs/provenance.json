@@ -3,37 +3,6 @@
   "method": "Local reference generation, real Pixal Studio GLB export, CPU Blender render. No manual mesh or texture edits.",
   "examples": [
     {
-      "name": "Explorer Robot",
-      "input_model": "SDXL 1.0 base",
-      "input_prompt": "A charming premium collectible toy explorer robot, mustard yellow and dark teal enamel armor, large round ivory head with two round black glass eyes, compact boxy torso with a circular blue chest light, two chunky articulated arms and two short sturdy legs with oversized boots. Both hands visible, arms slightly apart, standing upright. Entire single robot visible from antenna to feet. Three quarter front view. Beautiful polished product photography, precise mechanical detailing, realistic enamel and brushed metal, soft studio light, plain very light gray seamless background, centered isolated object with generous margin, no accessories or other objects.",
-      "input_seed": 12071,
-      "input_steps": 30,
-      "input_sampler": "dpmpp_2m",
-      "input_scheduler": "karras",
-      "input_cfg": 6.0,
-      "pipeline_preset": "detail",
-      "pipeline_seed": 42,
-      "pipeline_settings": {
-        "label": "Detailed",
-        "resolution": 1536,
-        "faces": 700000,
-        "texture_size": 4096
-      },
-      "generation_seconds_excluding_queue": 465.7,
-      "output_glb_bytes": 41083648,
-      "output_glb_sha256": "006e08a3635696c6b97fa9c282c230daeb401b1a6d24916e6adefd1117f1ae61",
-      "images": {
-        "input": {
-          "path": "images/explorer-robot-input.png",
-          "sha256": "fa4896c6f7521b046721e56f89169320aa5e91e8d1a256524bd95f4940b04b35"
-        },
-        "output": {
-          "path": "images/explorer-robot-output.png",
-          "sha256": "ff6ca17d503a41d269ce2dc2ac7b7955adaac64cd7f1cc9a7c08d0a74cb1c269"
-        }
-      }
-    },
-    {
       "name": "Forest Dragon",
       "input_model": "SDXL 1.0 base",
       "input_prompt": "A single adorable small green forest dragon collectible figurine, emerald green scales, cream colored belly, two small ochre horns, large friendly amber eyes, small folded dark green wings, four sturdy short legs standing on the ground, short thick tail curled beside body, rounded head looking toward camera, nonhuman quadruped animal. Entire figurine visible with all feet and tail in frame. Three quarter front view. Premium painted resin toy product photography, intricate sculpted scales, beautifully defined shapes, sharp focus, soft studio lighting, plain very light gray seamless background, centered isolated object with generous margin.",
@@ -62,7 +31,40 @@
           "path": "images/forest-dragon-output.png",
           "sha256": "f343c47487cb461dcc0ce9d62f07412dcea70b25a5029ad1a8e5afdd1c3284f0"
         }
-      }
+      },
+      "public_glb": "models/forest-dragon.glb"
+    },
+    {
+      "name": "Ceramic Teapot",
+      "input_model": "SDXL 1.0 base",
+      "input_prompt": "Professional studio product photograph of a single beautiful round teal ceramic teapot with a short curved spout, a fitted round lid and a large dark walnut wooden handle. Glossy teal glaze with subtle handcrafted texture, warm wooden accents. Entire teapot visible, centered, three quarter front view, on a plain light gray seamless background, soft diffused light, elegant minimalist design, crisp focus, catalog photography.",
+      "input_seed": 72031,
+      "input_steps": 30,
+      "input_sampler": "dpmpp_2m",
+      "input_scheduler": "karras",
+      "input_cfg": 6.0,
+      "pipeline_preset": "detail",
+      "pipeline_seed": 42,
+      "pipeline_settings": {
+        "label": "Detailed",
+        "resolution": 1536,
+        "faces": 700000,
+        "texture_size": 4096
+      },
+      "generation_seconds_excluding_queue": 197.4,
+      "output_glb_bytes": 35520060,
+      "output_glb_sha256": "2584f31634c43d0ec38d6b7d313ced7a3c0bae6426b47338d40d50b92ac93a51",
+      "images": {
+        "input": {
+          "path": "images/ceramic-teapot-input.png",
+          "sha256": "6b698c378912dd9266419b0728adb6bec7d9c7086e2aa8d3a5e55983546b3e08"
+        },
+        "output": {
+          "path": "images/ceramic-teapot-output.png",
+          "sha256": "1aee2aecebb054145952922e419b98fd48a45a4b6af8f7ce0f49efa645296c6b"
+        }
+      },
+      "public_glb": "models/ceramic-teapot.glb"
     }
   ]
 }

@@ -16,7 +16,9 @@ Source and issues: [JoelComputers/pixal-studio](https://github.com/JoelComputers
 
 One image in. A textured 3D model you can turn, inspect, and export.
 
-![Pixal Studio showing the explorer robot in its interactive 3D viewer](docs/images/studio-screenshot.png)
+[**Open the live 3D gallery — rotate and zoom the actual models**](https://joelcomputers.github.io/pixal-studio/)
+
+![Pixal Studio showing the forest dragon in its interactive 3D viewer](docs/images/studio-dragon-screenshot.png)
 
 ### From reference image to actual 3D output
 
@@ -28,8 +30,8 @@ between the input and output, and fine details can change during reconstruction.
 
 | AI-generated input image | Actual exported 3D model |
 | --- | --- |
-| **Explorer robot** | **Mechanical shapes and painted metal** |
-| ![Input: yellow and teal explorer robot](docs/images/explorer-robot-input.png) | ![Actual 3D render of the explorer robot](docs/images/explorer-robot-output.png) |
+| **Ceramic teapot** | **Ceramic body and wooden handle** |
+| ![Input: teal ceramic teapot](docs/images/ceramic-teapot-input.png) | ![Actual 3D render of the ceramic teapot](docs/images/ceramic-teapot-output.png) |
 | **Forest dragon figurine** | **Organic shapes, scales, and horns** |
 | ![Input: green toy dragon](docs/images/forest-dragon-input.png) | ![Actual 3D render of the forest dragon](docs/images/forest-dragon-output.png) |
 
