@@ -16,6 +16,9 @@ Source and issues: [JoelComputers/pixal-studio](https://github.com/JoelComputers
 
 One image in. A textured 3D model you can turn, inspect, and export.
 
+[**Watch the 28-second dragon demo**](https://joelcomputers.github.io/pixal-studio/#demo-title) ·
+[**Windows installation walkthrough**](docs/INSTALL.md)
+
 [**Open the live 3D gallery — rotate and zoom the actual models**](https://joelcomputers.github.io/pixal-studio/)
 
 ![Pixal Studio showing the forest dragon in its interactive 3D viewer](docs/images/studio-dragon-screenshot.png)
@@ -62,6 +65,9 @@ must be selected and verified separately. No minimum VRAM or Linux/cloud
 compatibility claim is made yet.
 
 ## Install the GUI on Windows
+
+New here? Follow the [illustrated installation walkthrough](docs/INSTALL.md),
+including model locations, configuration, readiness checks, and troubleshooting.
 
 Extract the source ZIP and open PowerShell inside its `pixal-studio` folder:
 

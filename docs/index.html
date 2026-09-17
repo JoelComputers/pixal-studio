@@ -4,6 +4,14 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Pixal Studio — Explore real 3D results</title>
 <meta name="description" content="Turn a single image into a textured 3D model. Explore real Pixal Studio results in your browser. Free, open-source, local image-to-3D.">
+<link rel="canonical" href="https://joelcomputers.github.io/pixal-studio/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pixal Studio — Free local image-to-3D for ComfyUI">
+<meta property="og:description" content="Watch a real image become a textured 3D model. Rotate the examples, download the free app, and follow the Windows setup guide.">
+<meta property="og:url" content="https://joelcomputers.github.io/pixal-studio/">
+<meta property="og:image" content="https://joelcomputers.github.io/pixal-studio/images/dragon-video-poster.png">
+<meta property="og:image:alt" content="Pixal Studio forest dragon demonstration: give your image shape">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="gallery.css">
 <script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.js","three/addons/":"./vendor/three/examples/jsm/"}}</script>
 </head>
@@ -11,6 +19,7 @@
 <header><a class="brand" href="./">◇ pixal <span>studio</span></a><nav><a href="https://github.com/JoelComputers/pixal-studio">GitHub</a><a class="button" href="https://github.com/JoelComputers/pixal-studio/releases/tag/v0.1.0">Get the free preview ↗</a></nav></header>
 <main>
 <div class="intro"><p class="eyebrow">FREE · OPEN SOURCE · LOCAL</p><h1>One image.<br>A new dimension.</h1><p>From a reference to a textured 3D model.<br>Explore real results. Turn them around. Look closer.</p><span class="badge">v0.1.0 · Developer preview</span></div>
+<section class="launch" aria-labelledby="demo-title"><div class="section-heading"><div><p class="eyebrow">LOCAL IMAGE-TO-3D FOR COMFYUI</p><h2 id="demo-title">See the dragon take shape.</h2></div><a href="https://github.com/JoelComputers/pixal-studio/blob/main/docs/INSTALL.md">Windows installation walkthrough ↗</a></div><video controls playsinline preload="none" poster="images/dragon-video-poster.png" aria-label="28-second Pixal Studio dragon demonstration with on-screen captions"><source src="media/dragon-demo.mp4" type="video/mp4"><a href="media/dragon-demo.mp4">Download the dragon demo video</a></video><p class="video-note">Silent demo with on-screen captions: one reference, the actual exported model rotating, and the local app. Generation time is skipped (this run: 206 seconds, plus queue time). <a href="media/dragon-demo.mp4" download>Download video</a> · <a href="https://github.com/JoelComputers/pixal-studio/blob/main/docs/DEMO.md">Read the transcript</a></p></section>
 <section aria-labelledby="dragon-title" data-model="forest-dragon">
 <div class="section-heading"><div><p class="eyebrow">01 / COLLECTIBLE</p><h2 id="dragon-title">Forest dragon</h2></div><p>Organic forms. Sculpted scales. A little character.</p></div>
 <div class="comparison"><figure><figcaption>01 <b>Reference image</b><small>AI-generated with local SDXL</small></figcaption><img src="images/forest-dragon-input.png" alt="Green forest dragon reference with cream belly and ochre horns"></figure><figure><figcaption>02 <b>Rendered result</b><small>Actual exported GLB, lit in Blender</small></figcaption><img src="images/forest-dragon-output.png" alt="Studio render of the generated forest dragon model"></figure><figure><figcaption>03 <b>Explore in 3D</b><small>Same exported model, live in your browser</small></figcaption><div class="viewport" tabindex="0" aria-label="Interactive forest dragon viewer"><img class="poster" src="images/forest-dragon-output.png" alt=""><button class="load button">Load 3D · 32 MB</button><p class="status" role="status"></p></div><div class="controls" hidden><button class="reset">Reset view</button><button class="left" aria-label="Rotate forest dragon left">↶ Rotate</button><button class="zoom" aria-label="Zoom in on forest dragon">+ Zoom</button></div></figure></div><p class="hint">Drag to orbit · Scroll or pinch to zoom · <a href="models/forest-dragon.glb" download>Download GLB</a></p>
