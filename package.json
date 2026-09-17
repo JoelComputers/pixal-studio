@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "three": "0.169.0"
+  },
+  "name": "pixal-studio-viewer",
+  "version": "0.1.0",
+  "private": true
+}

@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+config.local.json
+data/
+output/
+logs/
+node_modules/
+dist/
+.env
+.env.*

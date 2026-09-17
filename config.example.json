@@ -1,0 +1,7 @@
+{
+  "comfy_url": "http://127.0.0.1:8188",
+  "output_dir": "../ComfyUI/output",
+  "models_dir": "../ComfyUI/models",
+  "data_dir": "data",
+  "models": {}
+}

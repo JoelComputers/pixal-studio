@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pixal Studio · Image to 3D</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%231b7867'/%3E%3Cpath d='m20 8 11 6v12l-11 6-11-6V14zm0 0v12m11-6-11 6-11-6m11 6v12' fill='none' stroke='white' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/style.css">
+  <script type="importmap">{"imports":{"three":"/vendor/build/three.module.js","three/addons/":"/vendor/examples/jsm/"}}</script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Pixal Studio home"><span class="logo">◇</span><span>pixal<span class="brand-light"> studio</span></span></a>
+    <span class="local-badge"><i></i> LOCAL WORKSPACE</span>
+    <div id="connection" class="connection" role="status"><span class="dot"></span><span>Connecting…</span></div>
+  </header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">FROM REFERENCE TO REAL DIMENSION</p><h1>Give your image <em>shape.</em></h1><p class="subtitle">One image in. A 3D model you can turn, inspect, and take with you.</p></div><span class="step-note">01 Upload <b>→</b> 02 Generate <b>→</b> 03 Explore</span></section>
+    <div class="workspace">
+      <section class="controls card" aria-label="Create a model">
+        <div class="section-heading"><h2>Your reference</h2><span>01</span></div>
+        <label id="dropzone" class="dropzone" for="image-input" tabindex="0" role="button" aria-label="Choose a reference image">
+          <input id="image-input" type="file" accept="image/png,image/jpeg,image/webp" hidden>
+          <div id="upload-placeholder"><span class="upload-icon">↥</span><strong>Drop an image here</strong><span>or click to browse</span><small>PNG, JPG, WebP · up to 25 MB</small></div>
+          <img id="image-preview" alt="Selected reference" hidden><span id="change-image" hidden>Change image</span>
+        </label>
+        <p class="image-tip">Use one clear subject, fully in frame. A crisp reference helps faces, clothing, and small details.</p>
+        <label class="field-label" for="model-name">Model name</label><input id="model-name" type="text" placeholder="Untitled model" maxlength="120">
+        <div class="section-heading quality-heading"><h2>Quality</h2><span>02</span></div>
+        <div class="quality-options" role="radiogroup" aria-label="Generation quality">
+          <label class="quality-option"><input type="radio" name="quality" value="preview"><span><strong>Quick preview</strong><small>Explore the shape · lighter file</small></span><span class="radio-mark"></span></label>
+          <label class="quality-option selected"><input type="radio" name="quality" value="detail" checked><span><strong>Detailed <b class="recommended">BEST DETAIL</b></strong><small>Finer geometry · 4K surface textures</small></span><span class="radio-mark"></span></label>
+        </div>
+        <details class="advanced"><summary>More options</summary><label class="field-label" for="seed">Variation seed</label><div class="seed-row"><input id="seed" type="number" min="0" max="2147483647" value="42"><button id="randomize" class="quiet-button" type="button">Randomize</button></div><p>Keep the same seed to compare quality settings.</p></details>
+        <button id="generate" class="primary-button" disabled><span>Generate 3D model</span><span>↗</span></button>
+        <p class="queue-note">Runs on your PC. Waits its turn if the GPU is busy.</p>
+        <div id="form-error" class="error" role="alert" hidden></div>
+      </section>
+      <section class="preview card" aria-label="3D model preview">
+        <div class="preview-header"><div><p class="eyebrow">YOUR NEXT DIMENSION</p><h2 id="preview-title">The space for your creation</h2></div><span id="result-badge" class="pill">3D PREVIEW</span></div>
+        <div id="viewport" class="viewport">
+          <div id="empty-state" class="empty-state"><div class="wire-cube"><span>◇</span></div><h3>A new perspective starts here.</h3><p>Upload a reference and generate your first model.<br>It will appear here, ready to explore.</p></div>
+          <div id="viewer-message" class="viewer-message" role="status" hidden></div>
+          <div class="viewer-tools" id="viewer-tools" hidden><button id="reset-view" title="Fit the model in view">Reset view</button><button id="wireframe" aria-pressed="false">Wireframe</button><button id="rotate" aria-pressed="false">Auto rotate</button></div>
+          <div id="viewer-hint" class="viewer-hint" hidden>Drag to orbit <span>·</span> Scroll to zoom <span>·</span> Right-drag to pan</div>
+        </div>
+        <div id="job-status" class="job-status" hidden><div class="status-top"><div><span id="job-state" class="status-label"></span><strong id="job-stage"></strong></div><button id="cancel-job" class="quiet-button" hidden>Cancel this job</button></div><div class="progress-track"><div id="progress-bar"></div></div><p id="status-detail"></p></div>
+        <div id="result-footer" class="result-footer" hidden><div><strong id="result-summary"></strong><small id="mesh-stats"></small></div><a id="download-model" class="download-button" href="#">Download GLB <span>↓</span></a></div>
+        <div id="extra-downloads" class="extra-downloads" hidden></div>
+      </section>
+    </div>
+    <section class="history-section"><div class="history-heading"><div><p class="eyebrow">SAVED ON THIS COMPUTER</p><h2>Your models</h2></div><span id="history-count">0 creations</span></div><div id="history-list" class="history-list"><p class="history-empty">Your generated models will stay here for the next time you visit.</p></div></section>
+    <footer><span>PIXAL STUDIO</span><p>Made locally. Yours to build with.</p><span>IMAGE → 3D</span></footer>
+  </main>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
