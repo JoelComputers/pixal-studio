@@ -11,7 +11,8 @@ TOP = ["server.py", "settings.py", "pipeline.py", "doctor.py", "export_graph.py"
        "CONTRIBUTING.md", "CHANGELOG.md", ".gitignore", "Start Studio.cmd"]
 TREES = {"pixal_pipeline": {".py", ".json"}, "static": {".html", ".css", ".js"},
          "manifests": {".json", ".txt"}, "licenses": {".txt"},
-         "tests": {".py", ".json"}, "tools": {".py"}, ".github": {".md", ".yml"}}
+         "tests": {".py", ".json"}, "tools": {".py"}, ".github": {".md", ".yml"},
+         "docs": {".md", ".png", ".json"}}
 THREE = ["LICENSE", "build/three.module.js", "examples/jsm/controls/OrbitControls.js",
          "examples/jsm/loaders/GLTFLoader.js", "examples/jsm/environments/RoomEnvironment.js",
          "examples/jsm/utils/BufferGeometryUtils.js"]

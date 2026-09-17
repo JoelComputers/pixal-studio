@@ -12,6 +12,30 @@ Download: [v0.1.0 Developer Preview](https://github.com/JoelComputers/pixal-stud
 
 Source and issues: [JoelComputers/pixal-studio](https://github.com/JoelComputers/pixal-studio)
 
+## See it in action
+
+One image in. A textured 3D model you can turn, inspect, and export.
+
+![Pixal Studio showing the explorer robot in its interactive 3D viewer](docs/images/studio-screenshot.png)
+
+### From reference image to actual 3D output
+
+These are real runs of the **Detailed** preset. Inputs were generated locally
+for this demonstration. The results are renders of the exported GLB files,
+with studio lighting; they are not AI-generated pictures pretending to be 3D outputs.
+No manual mesh repair or texture retouching was applied. Camera and lighting differ
+between the input and output, and fine details can change during reconstruction.
+
+| AI-generated input image | Actual exported 3D model |
+| --- | --- |
+| **Explorer robot** | **Mechanical shapes and painted metal** |
+| ![Input: yellow and teal explorer robot](docs/images/explorer-robot-input.png) | ![Actual 3D render of the explorer robot](docs/images/explorer-robot-output.png) |
+| **Forest dragon figurine** | **Organic shapes, scales, and horns** |
+| ![Input: green toy dragon](docs/images/forest-dragon-input.png) | ![Actual 3D render of the forest dragon](docs/images/forest-dragon-output.png) |
+
+[Example settings and provenance](docs/SHOWCASE.md). These examples demonstrate
+reconstruction, not a guarantee of exact geometry, identity, or production-ready topology.
+
 ## Requirements
 
 - Python 3.12 for the GUI. The GUI has no PyTorch/CUDA dependency.
